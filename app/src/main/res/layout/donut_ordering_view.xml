@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/donutsRecyclerView"
+        android:layout_width="76dp"
+        android:layout_height="202dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="11dp"
+        android:text="Quantity:"
+        app:layout_constraintEnd_toStartOf="@+id/quantityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/donutTextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:text="Sub-total:"
+        app:layout_constraintStart_toEndOf="@+id/donutsRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/donutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="164dp"
+        android:text="Order Donuts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="244dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="65dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="99dp"
+        android:hint="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="299dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/subtotalEditText"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="415dp"
+        android:hint="..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
