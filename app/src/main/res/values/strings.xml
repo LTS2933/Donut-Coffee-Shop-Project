@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project5CS213</string>
+</resources>
+
+<string-array name="donut_type_names_txt">
+    <item>"Vanilla Frosted"</item>
+    <item>"Chocolate Frosted"</item>
+    <item>"Cinnamon"</item>
+    <item>"Maple"</item>
+    <item>"Glazed"</item>
+    <item>"Apple Pie"</item>
+    <item>"Boston Creme"</item>
+    <item>"Powdered Sugar"</item>
+    <item>"Pumpkin"</item>
+    <item>"Sprinkled"</item>
+    <item>"Strawberry Frosted"</item>
+    <item>"Jelly"</item>
+</string-array>
