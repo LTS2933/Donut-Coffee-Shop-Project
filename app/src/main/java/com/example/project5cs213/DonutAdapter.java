@@ -30,16 +30,17 @@ public class DonutAdapter extends RecyclerView.Adapter<DonutAdapter.MyViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DonutAdapter.MyViewHolder holder, int position){
-        holder.donutType.setText(donutTypeModels.get(position).getType());
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+
     }
+
 
     @Override
     public int getItemCount() {
         return donutTypeModels.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.MyViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
