@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderDonutsImageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        android:text="Quantity:"
+        app:layout_constraintEnd_toStartOf="@+id/quantityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/donutTextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="Sub-total:"
+        app:layout_constraintStart_toEndOf="@+id/donutTypeRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/donutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="172dp"
+        android:text="Order Donuts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="244dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="65dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="41dp"
+        android:hint="..."
+        app:layout_constraintBottom_toTopOf="@+id/ordersListView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="279dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/subtotalEditText"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="356dp"
+        android:hint="..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/successErrorTextView"
+        android:layout_width="308dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:text="success/error text view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/ordersListView"
+        android:layout_width="119dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/successErrorTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mainCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="4dp"
+        android:text="Back to Main View"
+        app:layout_constraintBottom_toTopOf="@+id/successErrorTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addToOrderButton"
+        android:layout_width="101dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="15dp"
+        android:text="Add to Order"
+        app:layout_constraintBottom_toTopOf="@+id/removeItemButton"
+        app:layout_constraintStart_toEndOf="@+id/donutTypeRecyclerView" />
+
+    <Button
+        android:id="@+id/removeItemButton"
+        android:layout_width="96dp"
+        android:layout_height="58dp"
+        android:text="Remove Item"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donutTextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/donutTypeRecyclerView"
+        android:layout_width="76dp"
+        android:layout_height="266dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
