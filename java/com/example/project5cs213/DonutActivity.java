@@ -37,12 +37,12 @@ public class DonutActivity extends AppCompatActivity{
         }
 
     private void setUpDonutTypes() {
-        String [] donutTypeNames = {"Yeast-Glazed", "Yeast-Chocolate Frosted" , "Yeast-Cinnamon", "Yeast-Strawberry Frosted",
+        String [] donutTypeNames = {"Yeast-Glazed", "Yeast-Chocolate Frosted" , "Yeast-Cinnamon", "Yeast-Strawberry Frosted", "Yeast-Vanilla Frosted",
                 "Cake-Velvet", "Cake-Powdered Sugar", "Cake-Extra Chocolate", "Cake-Jelly", "Donut Holes-Sprinkled", "Donut Holes-Pumpkin",
         "Donut Holes-Plain"};
 
         int [] donutTypeImages = {R.drawable.yeast_glazed, R.drawable.yeast_chocolate_frosted, R.drawable.yeast_cinnamon,
-                R.drawable.yeast_strawberry_frosted, R.drawable.cake_velvet, R.drawable.cake_powdered_sugar, R.drawable.cake_extra_chocolate,
+                R.drawable.yeast_strawberry_frosted, R.drawable.yeast_vanilla_frosted, R.drawable.cake_velvet, R.drawable.cake_powdered_sugar, R.drawable.cake_extra_chocolate,
                 R.drawable.cake_jelly, R.drawable.donutholes_sprinkled, R.drawable.donutholes_pumpkin, R.drawable.donutholes_plain};
 
 
