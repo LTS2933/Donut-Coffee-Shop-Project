@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/orderingBasketTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="155dp"
+        android:text="Ordering Basket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ordersListView"
+        android:layout_width="161dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:background="#E3E0E0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingBasketTextView" />
+
+    <TextView
+        android:id="@+id/subtotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="59dp"
+        android:text="Sub-total:"
+        app:layout_constraintStart_toEndOf="@+id/ordersListView"
+        app:layout_constraintTop_toBottomOf="@+id/orderingBasketTextView" />
+
+    <TextView
+        android:id="@+id/salesTaxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="Sales Tax:"
+        app:layout_constraintStart_toEndOf="@+id/ordersListView"
+        app:layout_constraintTop_toBottomOf="@+id/subtotalTextView" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="52dp"
+        android:text="Total:"
+        app:layout_constraintStart_toEndOf="@+id/ordersListView"
+        app:layout_constraintTop_toBottomOf="@+id/salesTaxTextView" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/subtotalTextInput"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="32dp"
+        android:hint="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/salesTaxEditText"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:hint="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtotalTextInput" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/totalEditText"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="33dp"
+        android:hint="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salesTaxEditText" />
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="40dp"
+        android:text="Place Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalEditText"
+        android:onClick = "placeBasketOrder"
+        />
+
+    <Button
+        android:id="@+id/cancelItemButton"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="37dp"
+        android:text="Cancel Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeOrderButton"
+        android:onClick = "cancelItemOrder"
+        />
+
+    <Button
+        android:id="@+id/mainViewButton"
+        android:layout_width="156dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="39dp"
+        android:text="Back to Main View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelItemButton"
+        android:onClick = "backToMainScreenFromBasket"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
